@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта" />
+    <title>ProjectName</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__user-wrapper">
+            <div class="header__user-inner">
+              <div class="header__search">
+                <p>
+                  <a class="btn" href="#" data-open-modal="feedback">
+                    <svg class="header__search-icon" width="20" height="20" role="img" aria-label="Поиск по сайту">
+                      <use xlink:href="img/sprite.svg#search-icon"></use>
+                    </svg>
+                    <span>Поиск</span>
+                  </a>
+                </p>
+              </div>
+              <ul class="header__user-list user-control reset-list">
+                <li class="user-control__item">
+                  <a class="user-control__link" href="#">Вход</a>
+                </li>
+                <li class="user-control__item">
+                  <p>
+                    <a class="user-control__link user-control__link--subscribe" href="#">подписаться</a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h1>крымский калейдоскоп</h1>
+          <div class="header__nav-wrapper">
+            <nav class="header__nav nav">
+              <ul class="nav__list reset-list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Рубрики</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">срочно</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">отзывы</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">рекламодателям</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">архив</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">la patrimoine</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">альманах этернализма flipbook</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="promo-slider">
+          <div class="promo-slider__container">
+            <div class="container">
+              <h2 class="visually-hidden">Самые интересные новости</h2>
+              <div class="promo-slider__swiper">
+                <div class="promo-slider__swiper-slides swiper" id="swiperArticle">
+                  <ul class="swiper__list swiper-wrapper reset-list">
+                    <li class="promo-slider__slides-item swiper-slide">
+                      <img class="promo-slider__slides-image" src="img/promo-slider/slide-1@1x.jpg" alt="" />
+                    </li>
+                    <li class="promo-slider__slides-item swiper-slide">
+                      <img class="promo-slider__slides-image" src="img/promo-slider/slide-2@1x.jpg" alt="" />
+                    </li>
+                    <li class="promo-slider__slides-item swiper-slide">
+                      <img class="promo-slider__slides-image" src="img/promo-slider/slide-1@1x.jpg" alt="" />
+                    </li>
+                    <li class="promo-slider__slides-item swiper-slide">
+                      <img class="promo-slider__slides-image" src="img/promo-slider/slide-2@1x.jpg" alt="" />
+                    </li>
+                    <li class="promo-slider__slides-item swiper-slide">
+                      <img class="promo-slider__slides-image" src="img/promo-slider/slide-1@1x.jpg" alt="" />
+                    </li>
+                  </ul>
+                </div>
+                <button class="promo-slider__button promo-slider__button--prev swiper-button-prev" type="button">
+                  <svg class="promo-slider__button-icon promo-slider__button-icon--prev" role="img" aria-label="кнопка назад." width="16" height="32">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <button class="promo-slider__button promo-slider__button--next swiper-button-next" type="button">
+                  <svg class="promo-slider__button-icon promo-slider__button-icon--next" role="img" aria-label="кнопка вперед." width="16" height="32">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container"></div>
+      </footer>
+    </div>
+
+    <!-- Модалки -->
+    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__search-wrapper">
+            <p>Поиск</p>
+            <div class="modal__search-content">
+              <input type="search" placeholder="Поиск" />
+              <svg class="modal__search-icon" width="20" height="20" role="img" aria-label="Поиск по сайту">
+                <use xlink:href="img/sprite.svg#search-icon"></use>
+              </svg>
+            </div>
+          </div>
+
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15" role="img">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
