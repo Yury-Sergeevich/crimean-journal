@@ -11,9 +11,9 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "Playfair Display";
 
   font-display: swap;
-  src:
-    url("../fonts/.woff2") format("woff2");
+  src: url("../../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("../../fonts/PlayfairDisplay-Regular.woff") format("woff");
 }

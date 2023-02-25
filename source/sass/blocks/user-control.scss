@@ -1,0 +1,24 @@
+.user-control__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.user-control__item p {
+  margin: 0;
+}
+
+.user-control__link {
+  padding: 15px 0;
+  color: #515151;
+
+  &--subscribe {
+    color: #1d1d1d;
+    border: 1px solid #1d1d1d;
+    text-transform: uppercase;
+    padding: 15px 20px;
+  }
+}

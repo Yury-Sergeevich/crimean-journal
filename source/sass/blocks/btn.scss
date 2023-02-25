@@ -1,10 +1,9 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  align-items: center;
 
-  color: $color-default-white;
-
-  background-color: $color-neon-blue;
+  padding: 15px 0;
+  color: #515151;
   border: none;
   cursor: pointer;
 
