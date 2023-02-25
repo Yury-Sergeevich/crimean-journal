@@ -2189,6 +2189,7 @@ button,
   margin-left: 12px;
   margin-right: 12px;
   padding-top: 30px;
+  padding-bottom: 14px;
 }
 
 .header__user-inner {
@@ -2308,9 +2309,13 @@ button,
   position: relative;
 }
 
+.promo-slider__swiper-slides {
+  height: 485px;
+}
+
 .promo-slider__slides-item {
   position: relative;
-  height: 508px;
+  height: 585px;
   width: 100%;
   overflow: hidden;
 }
@@ -2319,15 +2324,16 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
-  height: 45vw;
 }
 
 .promo-slider__button {
-  border: 2px solid #ffffff;
+  border: none;
+  margin: 0;
+  top: 0;
   border-radius: 50px;
   background-color: transparent;
   width: 50px;
-  height: 50px;
+  height: 100%;
   padding: 0;
   z-index: 3;
   cursor: pointer;
@@ -2340,10 +2346,6 @@ button,
 
 .promo-slider__button--prev {
   left: 25px;
-  top: 60%;
-  -webkit-transform: translate(-50% -50%);
-  -ms-transform: translate(-50% -50%);
-  transform: translate(-50% -50%);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -2351,24 +2353,18 @@ button,
 
 .promo-slider__button--next {
   right: 25px;
-  top: 60%;
-  -webkit-transform: translate(-50% -50%);
-  -ms-transform: translate(-50% -50%);
-  transform: translate(-50% -50%);
   -webkit-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 
-.promo-slider__button-icon--prev {
+.promo-slider__button-icon {
   position: absolute;
-  left: 17px;
-}
-
-.promo-slider__button-icon--next {
-  position: absolute;
-  left: 19px;
-  top: 8px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
 }
 
 /* @mixin hover-focus {
