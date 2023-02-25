@@ -7,7 +7,11 @@
 }
 
 .promo-slider__swiper-slides {
-  height: 485px;
+  height: 540px;
+
+  @include vp-1023 {
+    height: 341px;
+  }
 }
 
 .promo-slider__slides-item {
@@ -19,6 +23,7 @@
 
 .promo-slider__slides-image {
   object-fit: cover;
+  // height: 34.2vw;
   width: 100%;
 }
 
@@ -48,11 +53,4 @@
     right: 25px;
     transform: rotate(360deg);
   }
-}
-
-.promo-slider__button-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% -50%);
 }

@@ -120,6 +120,10 @@
 .modal__search-wrapper {
   width: 800px;
   margin: 0 auto;
+
+  @include vp-1023 {
+    width: 100%;
+  }
 }
 
 .modal__search-wrapper p {
