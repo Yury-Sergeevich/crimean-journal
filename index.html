@@ -37,7 +37,7 @@
               </ul>
             </div>
           </div>
-          <h1>крымский калейдоскоп</h1>
+          <!-- <h1>крымский калейдоскоп</h1> -->
           <div class="header__nav-wrapper">
             <nav class="header__nav nav">
               <ul class="nav__list reset-list">
@@ -69,9 +69,9 @@
       </header>
       <main>
         <section class="promo-slider">
-          <div class="promo-slider__container">
-            <div class="container">
-              <h2 class="visually-hidden">Самые интересные новости</h2>
+          <h2 class="visually-hidden">Самые интересные новости</h2>
+          <div class="container">
+            <div class="promo-slider__container">
               <div class="promo-slider__swiper">
                 <div class="promo-slider__swiper-slides swiper" id="swiperArticle">
                   <ul class="swiper__list swiper-wrapper reset-list">
@@ -92,16 +92,20 @@
                     </li>
                   </ul>
                 </div>
-                <button class="promo-slider__button promo-slider__button--prev swiper-button-prev" type="button">
-                  <svg class="promo-slider__button-icon promo-slider__button-icon--prev" role="img" aria-label="кнопка назад." width="16" height="32">
-                    <use xlink:href="img/sprite.svg#arrow"></use>
-                  </svg>
-                </button>
-                <button class="promo-slider__button promo-slider__button--next swiper-button-next" type="button">
-                  <svg class="promo-slider__button-icon promo-slider__button-icon--next" role="img" aria-label="кнопка вперед." width="16" height="32">
-                    <use xlink:href="img/sprite.svg#arrow"></use>
-                  </svg>
-                </button>
+                <div class="promo-slider__button-wrapper promo-slider__button-wrapper--prev">
+                  <button class="promo-slider__button promo-slider__button--prev swiper-button-prev" type="button">
+                    <svg class="promo-slider__button-icon promo-slider__button-icon--prev" role="img" aria-label="кнопка назад." width="16" height="32">
+                      <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="promo-slider__button-wrapper promo-slider__button-wrapper--next">
+                  <button class="promo-slider__button promo-slider__button--next swiper-button-next" type="button">
+                    <svg class="promo-slider__button-icon promo-slider__button-icon--next" role="img" aria-label="кнопка вперед." width="16" height="32">
+                      <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
                 <div class="swiper-pagination"></div>
               </div>
             </div>
