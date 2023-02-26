@@ -8,8 +8,14 @@ const initSwiperArticles = (swiper) => {
         prevEl: '.swiper-button-prev',
       },
 
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
       pagination: {
         el: pagination,
+        clickable: true,
       },
       mousewheel: true,
       keyboard: true,
