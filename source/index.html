@@ -12,58 +12,100 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__container container">
-          <div class="header__user-wrapper">
-            <div class="header__user-inner">
-              <div class="header__search">
-                <p>
-                  <a class="btn" href="#" data-open-modal="feedback">
-                    <svg class="header__search-icon" width="20" height="20" role="img" aria-label="Поиск по сайту">
-                      <use xlink:href="img/sprite.svg#search-icon"></use>
-                    </svg>
-                    <span>Поиск</span>
-                  </a>
-                </p>
-              </div>
-              <ul class="header__user-list user-control reset-list">
-                <li class="user-control__item">
-                  <a class="user-control__link" href="#">Вход</a>
-                </li>
-                <li class="user-control__item">
+        <div class="header__overlay">
+          <div class="header__container container">
+            <div class="header__user-wrapper">
+              <div class="header__user-inner">
+                <div class="header__search">
                   <p>
-                    <a class="user-control__link user-control__link--subscribe" href="#">подписаться</a>
+                    <a class="btn" href="#" data-open-modal="feedback">
+                      <svg class="header__search-icon" width="20" height="20" role="img" aria-label="Поиск по сайту">
+                        <use xlink:href="img/sprite.svg#search-icon"></use>
+                      </svg>
+                      <span>Поиск</span>
+                    </a>
                   </p>
-                </li>
-              </ul>
+                </div>
+                <ul class="header__user-list user-control reset-list">
+                  <li class="user-control__item">
+                    <a class="user-control__link" href="#">Вход</a>
+                  </li>
+                  <li class="user-control__item">
+                    <p>
+                      <a class="user-control__link user-control__link--subscribe" href="#">подписаться</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <!-- <h1>крымский калейдоскоп</h1> -->
-          <div class="header__nav-wrapper">
-            <nav class="header__nav nav">
-              <ul class="nav__list reset-list">
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Рубрики</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">срочно</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">отзывы</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">рекламодателям</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">архив</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">la patrimoine</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">альманах этернализма flipbook</a>
-                </li>
-              </ul>
-            </nav>
+            <div class="header__nav-wrapper">
+              <nav class="header__nav nav">
+                <ul class="nav__list reset-list">
+                  <li class="nav__item nav__item--rubricks">
+                    <a class="nav__link" href="#">Рубрики</a>
+                    <ul class="rubrick-list reset-list">
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Экология Крыма</a>
+                      </li>
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Этнография Крыма</a>
+                      </li>
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Эко и этнотуризм Крыма</a>
+                      </li>
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Этническая кухня Крыма</a>
+                      </li>
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Эко и этноэкономика</a>
+                      </li>
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Этническое казачество</a>
+                      </li>
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Охрана памятников</a>
+                      </li>
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Культурное наследие</a>
+                      </li>
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Крымские современники</a>
+                      </li>
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Правовые коллапсы</a>
+                      </li>
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Актуальное интервью</a>
+                      </li>
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Шаржи бытия</a>
+                      </li>
+                      <li class="rubrick__item">
+                        <a class="rubrick-link" href="#">Память крымского спорта</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">срочно</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">отзывы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">рекламодателям</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">архив</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">la patrimoine</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">альманах этернализма flipbook</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </header>
@@ -76,19 +118,34 @@
                 <div class="promo-slider__swiper-slides swiper" id="swiperArticle">
                   <ul class="swiper__list swiper-wrapper reset-list">
                     <li class="promo-slider__slides-item swiper-slide">
-                      <img class="promo-slider__slides-image" src="img/promo-slider/slide-1@1x.jpg" alt="" />
+                      <a href="#" class="promo-slider__slides-link">
+                        <img class="promo-slider__slides-image" src="img/promo-slider/slide-1@1x.jpg" alt="" />
+                        <h3>Становление этнического казачества в Крыму</h3>
+                      </a>
                     </li>
                     <li class="promo-slider__slides-item swiper-slide">
-                      <img class="promo-slider__slides-image" src="img/promo-slider/slide-2@1x.jpg" alt="" />
+                      <a href="#" class="promo-slider__slides-link">
+                        <img class="promo-slider__slides-image" src="img/promo-slider/slide-2@1x.jpg" alt="" />
+                        <h3>заголовок</h3>
+                      </a>
                     </li>
                     <li class="promo-slider__slides-item swiper-slide">
-                      <img class="promo-slider__slides-image" src="img/promo-slider/slide-1@1x.jpg" alt="" />
+                      <a href="#" class="promo-slider__slides-link">
+                        <img class="promo-slider__slides-image" src="img/promo-slider/slide-1@1x.jpg" alt="" />
+                        <h3>Становление этнического казачества в Крыму</h3>
+                      </a>
                     </li>
                     <li class="promo-slider__slides-item swiper-slide">
-                      <img class="promo-slider__slides-image" src="img/promo-slider/slide-2@1x.jpg" alt="" />
+                      <a href="#" class="promo-slider__slides-link">
+                        <img class="promo-slider__slides-image" src="img/promo-slider/slide-2@1x.jpg" alt="" />
+                        <h3>заголовок</h3>
+                      </a>
                     </li>
                     <li class="promo-slider__slides-item swiper-slide">
-                      <img class="promo-slider__slides-image" src="img/promo-slider/slide-1@1x.jpg" alt="" />
+                      <a href="#" class="promo-slider__slides-link">
+                        <img class="promo-slider__slides-image" src="img/promo-slider/slide-1@1x.jpg" alt="" />
+                        <h3>Становление этнического казачества в Крыму</h3>
+                      </a>
                     </li>
                   </ul>
                 </div>

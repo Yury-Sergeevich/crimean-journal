@@ -4,6 +4,7 @@
 
 .nav__list {
   display: flex;
+  justify-content: center;
 
   @include vp-1023 {
     overflow-y: auto;
@@ -15,6 +16,15 @@
 }
 
 .nav__item {
+  &--rubricks {
+    position: relative;
+
+    &:hover .rubrick-list {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
   &:not(:last-child) {
     margin-right: 45px;
   }
