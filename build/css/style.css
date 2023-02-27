@@ -2171,24 +2171,6 @@ button,
   width: 100%;
 }
 
-.header__overlay-open .header__container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #ffffff;
-  visibility: visible;
-  opacity: 1;
-  width: 80%;
-  min-height: 100%;
-  margin: 0;
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-}
-
 .header__user-wrapper {
   border-bottom: 1px solid #d9d9d9;
   margin-left: 12px;
@@ -2370,12 +2352,16 @@ button,
 }
 
 .rubrick-link {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   display: inline-block;
   vertical-align: middle;
   padding: 10px 20px;
   width: 100%;
-  font-size: 12px;
-  text-transform: uppercase;
 }
 
 .user-control__item {
@@ -2408,7 +2394,6 @@ button,
   border: 1px solid #1d1d1d;
   text-transform: uppercase;
   padding: 10px 20px;
-  display: none;
 }
 
 .nav {
@@ -2422,7 +2407,6 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  overflow-y: auto;
 }
 
 .nav__list::-webkit-scrollbar {
@@ -2436,6 +2420,7 @@ button,
 .nav__item--rubricks:hover .rubrick-list {
   opacity: 1;
   visibility: visible;
+  color: red;
 }
 
 .nav__item:not(:last-child) {
@@ -2639,6 +2624,24 @@ button,
     transition: all 0.3s ease 0.2s;
   }
 
+  .header__overlay-open .header__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #ffffff;
+    visibility: visible;
+    opacity: 1;
+    width: 85%;
+    min-height: 100%;
+    margin: 0;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  }
+
   .header__user-wrapper {
     margin: 0;
     padding: 0;
@@ -2667,6 +2670,10 @@ button,
   }
 
   .wrapper--open-menu + .menu-toggle {
+    display: none;
+  }
+
+  .user-control__link--subscribe {
     display: none;
   }
 

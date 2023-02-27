@@ -21,6 +21,11 @@
     border: 1px solid #1d1d1d;
     text-transform: uppercase;
     padding: 10px 20px;
-    display: none;
+  }
+
+  @include vp-767 {
+    &--subscribe {
+      display: none;
+    }
   }
 }

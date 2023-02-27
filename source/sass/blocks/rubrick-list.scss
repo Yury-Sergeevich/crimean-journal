@@ -19,10 +19,12 @@
 }
 
 .rubrick-link {
+  @include font(16px, 19px, 400, $first-color);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
   display: inline-block;
   vertical-align: middle;
   padding: 10px 20px;
   width: 100%;
-  font-size: 12px;
-  text-transform: uppercase;
 }
