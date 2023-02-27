@@ -39,6 +39,7 @@
 .promo-slider__slides-image {
   object-fit: cover;
   height: 43vw;
+  max-height: 670px;
   width: 100%;
 
   @include vp-767 {
@@ -96,7 +97,7 @@
   line-height: 52px;
   margin: 0;
   position: absolute;
-  bottom: 100px;
+  bottom: 45px;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
