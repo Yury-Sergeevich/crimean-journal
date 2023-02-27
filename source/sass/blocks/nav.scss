@@ -5,9 +5,10 @@
 .nav__list {
   display: flex;
   justify-content: center;
+  overflow-y: auto;
 
-  @include vp-1023 {
-    overflow-y: auto;
+  @include vp-767 {
+    flex-direction: column;
   }
 }
 
@@ -28,10 +29,25 @@
   &:not(:last-child) {
     margin-right: 45px;
   }
+
+  @include vp-767 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 
 .nav__link {
-  font-size: 12px;
+  @include font(16px, 19px, 400, $first-color);
+  letter-spacing: 0.03em;
+
+  display: inline-block;
+
   text-transform: uppercase;
   white-space: nowrap;
+
+  @include vp-767 {
+    padding: 0 20px;
+    white-space: normal;
+  }
 }

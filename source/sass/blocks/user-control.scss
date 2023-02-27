@@ -12,14 +12,15 @@
 }
 
 .user-control__link {
+  @include font(16px, 19px, 400, #515151);
+
   padding: 15px 0;
-  color: #515151;
-  font-size: 14px;
 
   &--subscribe {
     color: #1d1d1d;
     border: 1px solid #1d1d1d;
     text-transform: uppercase;
     padding: 10px 20px;
+    display: none;
   }
 }
