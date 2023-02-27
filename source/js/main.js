@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initSwiperArticles} from './modules/swiper-articles/swiper-articles';
 import {initMobMenu} from './modules/mob-menu/toggle-btn';
+import {initAnimScroll} from './utils/animate-scroll';
 
 // ---------------------------------
 
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   initMobMenu();
   initSwiperArticles(swiper);
+  initAnimScroll();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
