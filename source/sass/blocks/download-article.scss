@@ -14,14 +14,33 @@
   width: 60%;
   margin: 0 auto;
   margin-bottom: 35px;
+
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.download-article__title h2.active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .download-article__subtitle p {
   @include font(18px, 26px, 400, $first-color);
   text-align: center;
+
   width: 60%;
   margin: 0 auto;
   margin-bottom: 35px;
+
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.download-article__subtitle p.active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .download-article__content-form-wrapper {
@@ -61,4 +80,9 @@
   padding: 13px 0;
   background-color: $first-color;
   color: $second-color;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
