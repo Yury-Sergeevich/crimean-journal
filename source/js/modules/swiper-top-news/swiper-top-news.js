@@ -16,8 +16,6 @@ const initSwiperTopNews = (swiper) => {
       mousewheel: true,
       keyboard: true,
 
-      loop: true,
-
       breakpoints: {
         // 280: {
         //   slidesPerView: 1,
