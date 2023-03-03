@@ -1,9 +1,11 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
-import {initSwiperArticles} from './modules/swiper-articles/swiper-articles';
-import {initMobMenu} from './modules/mob-menu/toggle-btn';
-import {initAnimScroll} from './utils/animate-scroll';
+/* eslint-disable object-curly-spacing */
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
+import { Form } from './modules/form-validate/form';
+import { initSwiperArticles } from './modules/swiper-articles/swiper-articles';
+import { initMobMenu } from './modules/mob-menu/toggle-btn';
+import { initSwiperTopNews } from './modules/swiper-top-news/swiper-top-news';
+import { initAnimScroll } from './utils/animate-scroll';
 
 // ---------------------------------
 
@@ -19,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   initMobMenu();
   initSwiperArticles(swiper);
+  initSwiperTopNews(swiper);
   initAnimScroll();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
