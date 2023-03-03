@@ -2820,6 +2820,20 @@ button,
   width: 60%;
   margin: 0 auto;
   margin-bottom: 35px;
+  -webkit-transform: translate(0px, 100%);
+  -ms-transform: translate(0px, 100%);
+  transform: translate(0px, 100%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.download-article__title h2.active {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .download-article__subtitle p {
@@ -2831,6 +2845,20 @@ button,
   width: 60%;
   margin: 0 auto;
   margin-bottom: 35px;
+  -webkit-transform: translate(0px, 100%);
+  -ms-transform: translate(0px, 100%);
+  transform: translate(0px, 100%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.download-article__subtitle p.active {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .download-article__content-form-wrapper {
@@ -2880,6 +2908,11 @@ button,
   padding: 13px 0;
   background-color: #000000;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.form-subscribe__button-submit:hover {
+  opacity: 0.8;
 }
 
 /* @mixin hover-focus {
