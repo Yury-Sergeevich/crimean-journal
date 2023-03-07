@@ -50,7 +50,7 @@
 }
 
 .download-article__content-form {
-  width: 40%;
+  width: 43%;
 }
 
 .download-article__link-subscribe {
@@ -66,23 +66,4 @@
 
 .download-article__form-wrapper {
   width: 38.8%;
-}
-
-.form-subscribe__field input {
-  width: 100%;
-  border: none;
-  padding: 12.5px 0 12.5px 15px;
-  margin-bottom: 10px;
-}
-
-.form-subscribe__button-submit {
-  width: 100%;
-  padding: 13px 0;
-  background-color: $first-color;
-  color: $second-color;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.8;
-  }
 }
