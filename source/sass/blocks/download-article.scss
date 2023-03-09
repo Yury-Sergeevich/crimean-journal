@@ -7,6 +7,10 @@
   padding-bottom: 80px;
 }
 
+.download-article__content-title {
+  padding-top: 80px;
+}
+
 .download-article__title h2 {
   @include font(36px, 48px, 400, $first-color);
   text-transform: uppercase;
