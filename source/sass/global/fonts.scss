@@ -17,3 +17,21 @@
   src: url("../../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
     url("../../fonts/PlayfairDisplay-Regular.woff") format("woff");
 }
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik Dirt", "Arial", sans-serif;
+
+  font-display: swap;
+  src: url("../fonts/RubikDirt-Regular.woff2") format("woff2"), url("../fonts/RubikDirt-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Jawbreak", "Arial", sans-serif;
+
+  font-display: swap;
+  src: url("../fonts/Jawbreak-SlabCut.woff2") format("woff2"), url("../fonts/Jawbreak-SlabCut.woff") format("woff");
+}

@@ -1239,6 +1239,22 @@ button.swiper-pagination-bullet {
   src: url("../../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../../fonts/PlayfairDisplay-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik Dirt", "Arial", sans-serif;
+  font-display: swap;
+  src: url("../fonts/RubikDirt-Regular.woff2") format("woff2"), url("../fonts/RubikDirt-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Jawbreak", "Arial", sans-serif;
+  font-display: swap;
+  src: url("../fonts/Jawbreak-SlabCut.woff2") format("woff2"), url("../fonts/Jawbreak-SlabCut.woff") format("woff");
+}
+
 *,
 *::before,
 *::after {
@@ -2924,6 +2940,35 @@ button,
 
 .form-subscribe__button-submit:hover {
   opacity: 0.8;
+}
+
+.ecology-crimea__container h2 {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 400;
+  color: #000000;
+  font-family: "Rubik Dirt", "Arial", sans-serif;
+}
+
+.ecology-crimea__item {
+  min-height: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ecology-crimea__image-wrapper {
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+}
+
+.ecology-crimea__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  min-height: 260px;
 }
 
 /* @mixin hover-focus {
