@@ -675,7 +675,7 @@ template {
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
+  font-size: 35px;
   text-transform: none !important;
   letter-spacing: 0;
   text-transform: none;
@@ -2510,6 +2510,7 @@ button,
   position: relative;
   height: 100%;
   width: 100%;
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -2947,6 +2948,169 @@ button,
   opacity: 0.8;
 }
 
+.footer__container {
+  padding-top: 72px;
+  padding-bottom: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.footer__list-nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 426px;
+}
+
+.footer__link-nav {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.footer__contacts-link {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.footer__subscripe {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer__button-subscripe {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  border: 1px solid #e35f00;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.footer__button-subscripe::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ffc990;
+  border-radius: 10px;
+  -webkit-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.footer__button-subscripe:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #ffc990;
+  -webkit-transition: width 0.6s;
+  -o-transition: width 0.6s;
+  transition: width 0.6s;
+  z-index: 1;
+}
+
+.footer__button-subscripe-icon {
+  z-index: 2;
+}
+
+.footer__button-subscripe-title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #e35f00;
+  text-transform: uppercase;
+}
+
+.ecology-crimea__container h2 {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 400;
+  color: #000000;
+  font-family: "Rubik Dirt", "Arial", sans-serif;
+}
+
+.ecology-crimea__item {
+  min-height: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ecology-crimea__image-wrapper {
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+}
+
+.ecology-crimea__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  min-height: 260px;
+}
+
+.ecology-crimea__wrapper-swiper {
+  position: relative;
+}
+
+.ecology-crimea__button {
+  position: absolute;
+  top: 50%;
+  border: none;
+  background: transparent;
+  color: #c3c3c3;
+}
+
+.ecology-crimea__button--ethno-prev {
+  left: -40px;
+}
+
+.ecology-crimea__button--ethno-next {
+  right: -40px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -3007,6 +3171,11 @@ button,
 
   .top-news__image {
     height: 30vw;
+  }
+
+  .footer__container {
+    padding-top: 50px;
+    padding-bottom: 45px;
   }
 }
 

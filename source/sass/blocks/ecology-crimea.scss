@@ -23,3 +23,23 @@
   height: auto;
   min-height: 260px;
 }
+
+.ecology-crimea__wrapper-swiper {
+  position: relative;
+}
+
+.ecology-crimea__button {
+  position: absolute;
+  top: 50%;
+  border: none;
+  background: transparent;
+  color: #c3c3c3;
+
+  &--ethno-prev {
+    left: -40px;
+  }
+
+  &--ethno-next {
+    right: -40px;
+  }
+}
