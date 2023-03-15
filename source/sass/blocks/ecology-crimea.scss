@@ -1,0 +1,25 @@
+.ecology-crimea__container h2 {
+  @include font(32px, 42px, 400, $first-color);
+  font-family: "Rubik Dirt", "Arial", sans-serif;
+}
+
+.ecology-crimea__item {
+  min-height: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ecology-crimea__image-wrapper {
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+}
+
+.ecology-crimea__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  min-height: 260px;
+}
