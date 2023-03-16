@@ -4,8 +4,8 @@ const initSwiperEthnoCreimea = (swiper) => {
     // eslint-disable-next-line
     new Swiper('#SwiperEthno', {
       navigation: {
-        prevEl: '.ecology-crimea__button--ethno-next',
-        nextEl: '.ecology-crimea__button--ethno-prev',
+        prevEl: '.ecology-crimea__button--ethno-prev',
+        nextEl: '.ecology-crimea__button--ethno-next',
       },
 
       mousewheel: true,
