@@ -3062,7 +3062,7 @@ button,
   text-transform: uppercase;
 }
 
-.ecology-crimea__container h2 {
+.ecology-crimea__title {
   font-size: 32px;
   line-height: 42px;
   font-weight: 400;
@@ -3070,10 +3070,33 @@ button,
   font-family: "Rubik Dirt", "Arial", sans-serif;
 }
 
-.ecology-crimea__item {
-  min-height: 260px;
+.ecology-crimea__card {
+  min-height: 290px;
   border-radius: 20px;
-  overflow: hidden;
+}
+
+.ecology-crimea__card-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.ecology-crimea__card-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  margin-top: auto;
+  margin: 0;
 }
 
 .ecology-crimea__image-wrapper {
@@ -3086,6 +3109,7 @@ button,
   position: absolute;
   left: 0;
   top: 0;
+  border-radius: 20px;
   width: 100%;
   height: auto;
   min-height: 260px;
