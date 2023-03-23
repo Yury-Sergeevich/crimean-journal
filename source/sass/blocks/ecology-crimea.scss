@@ -1,46 +1,6 @@
-.ecology-crimea__title {
-  @include font(32px, 42px, 400, $first-color);
-  font-family: "Rubik Dirt", "Arial", sans-serif;
-}
-
-.ecology-crimea__card {
-  min-height: 290px;
-  border-radius: 20px;
-}
-
-.ecology-crimea__card-link {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.ecology-crimea__card-title {
-  @include font(16px, 22px, 400, $first-color);
-  text-align: center;
-
-  margin-top: auto;
-  margin: 0;
-}
-
-.ecology-crimea__image-wrapper {
-  position: relative;
-  padding-top: 100%;
-  width: 100%;
-}
-
-.ecology-crimea__image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 20px;
-  width: 100%;
-  height: auto;
-  min-height: 260px;
-}
-
 .ecology-crimea__wrapper-swiper {
   position: relative;
+  margin-bottom: 45px;
 }
 
 .ecology-crimea__button {

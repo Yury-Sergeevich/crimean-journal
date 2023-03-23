@@ -3062,61 +3062,9 @@ button,
   text-transform: uppercase;
 }
 
-.ecology-crimea__title {
-  font-size: 32px;
-  line-height: 42px;
-  font-weight: 400;
-  color: #000000;
-  font-family: "Rubik Dirt", "Arial", sans-serif;
-}
-
-.ecology-crimea__card {
-  min-height: 290px;
-  border-radius: 20px;
-}
-
-.ecology-crimea__card-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.ecology-crimea__card-title {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #000000;
-  text-align: center;
-  margin-top: auto;
-  margin: 0;
-}
-
-.ecology-crimea__image-wrapper {
-  position: relative;
-  padding-top: 100%;
-  width: 100%;
-}
-
-.ecology-crimea__image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 20px;
-  width: 100%;
-  height: auto;
-  min-height: 260px;
-}
-
 .ecology-crimea__wrapper-swiper {
   position: relative;
+  margin-bottom: 45px;
 }
 
 .ecology-crimea__button {
@@ -3163,6 +3111,88 @@ button,
 
 .ecology-crimea__button--ethno-next::after {
   content: "next";
+}
+
+.categories__title {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 400;
+  color: #000000;
+  font-family: "Rubik Dirt", "Arial", sans-serif;
+}
+
+.categories__card {
+  min-height: 311px;
+  border-radius: 20px;
+}
+
+.categories__card-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.categories__image-wrapper {
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+}
+
+.categories__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  min-height: 260px;
+}
+
+.categories__card-title {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #000000;
+  margin: auto 0 0 0;
+}
+
+.categories__card-sub-title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #b6adad;
+}
+
+.categories__last-card {
+  background-color: #1f1b2e;
+  min-height: 260px;
+  border-radius: 20px;
+}
+
+.categories__last-card-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.categories__last-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
 }
 
 /* @mixin hover-focus {

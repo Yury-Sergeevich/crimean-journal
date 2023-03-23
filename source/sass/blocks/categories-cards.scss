@@ -1,0 +1,60 @@
+.categories__title {
+  @include font(32px, 42px, 400, $first-color);
+  font-family: "Rubik Dirt", "Arial", sans-serif;
+}
+
+.categories__card {
+  min-height: 311px;
+  border-radius: 20px;
+}
+
+.categories__card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.categories__image-wrapper {
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+}
+
+.categories__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  min-height: 260px;
+}
+
+.categories__card-title {
+  @include font(18px, 28px, 600, $first-color);
+
+  margin: auto 0 0 0;
+}
+
+.categories__card-sub-title {
+  @include font(14px, 18px, 400, $sub-title-color);
+}
+
+.categories__last-card {
+  background-color: #1f1b2e;
+  min-height: 260px;
+  border-radius: 20px;
+}
+
+.categories__last-card-link {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories__last-card-title {
+  @include font(24px, 28px, 400, $second-color);
+
+  margin: 0;
+}
